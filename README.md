@@ -1,6 +1,7 @@
 # Module-02-Challenge
 
 ## Description
+
 I have created a portfolio page that showcases my skills in coding. This portfolio includes links to already deployed applications that potential employers can review and assess whether I am a good candidate for an open position. The page includes information on myself as well, for example, name, photo, about me section, etc.
 
 This site has been created also to showcase my ability to use core skills such as flex box, media queries, and CSS variables. 
@@ -12,11 +13,15 @@ Before creating the code for the portfolio, I created a wireframe to come up wit
 ## Deployment
 
 ## Credits
-Social Media icons found in https://www.iconfinder.com
 
-Wireframe made using [Lucid](https://lucid.app/lucidchart/5c088471-f859-493e-82ab-dc6f0361ddcb/edit?viewport_loc=-572%2C-166%2C3328%2C1612%2C0_0&invitationId=inv_0148a65d-36f5-4f34-8aa2-41a114df02e2)
+Social Media icons downloaded from [Iconfinder](https://www.iconfinder.com)
+
+Wireframe made using [Lucidchart](https://lucid.app/lucidchart/5c088471-f859-493e-82ab-dc6f0361ddcb/edit?viewport_loc=-572%2C-166%2C3328%2C1612%2C0_0&invitationId=inv_0148a65d-36f5-4f34-8aa2-41a114df02e2)
+
+Reset CSS copied from [Eric A. Meyer's site](https://meyerweb.com/eric/tools/css/reset/)
 
 ## License
+
 MIT License
 
 Copyright (c) 2022 sarasg89
