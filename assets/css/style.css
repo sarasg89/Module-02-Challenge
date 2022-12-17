@@ -1,0 +1,64 @@
+/*This selector sets the base font-size and font-family for the whole site*/
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 30%; */
+    align-items: flex-end;
+    margin: 2rem 2rem 0 2rem;
+    background-color: blue;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+/*Links in the side/nav bar*/
+.sections li {
+    padding: 0.5rem;
+}
+
+.sections li:hover {
+    font-weight: bolder;
+}
+
+/*Links underneath portfolio, initially hidden*/
+.languages {
+    display: none;
+    margin-left: 1rem;
+}
+
+/*Languages appears when mouse hovers over the word portfolio*/
+.sections:hover .languages{
+    display: block;
+}
+
+#social-media {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#social-media img {
+    max-width: 3rem;
+    flex: 0 1 3rem;
+    height: auto;
+}
