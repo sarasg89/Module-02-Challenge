@@ -5,60 +5,52 @@ html {
 }
 
 :root {
-    
-}
-
-body {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    --green: #2e8b57;
+    --light-green: #daf7a6;
+    --red: #900c3f;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    /* max-width: 30%; */
-    align-items: flex-end;
-    margin: 2rem 2rem 0 2rem;
-    background-color: blue;
+    overflow: hidden;
+    background-color: var(--green);
+    position: fixed;
+    width: 100%;
+    height: auto;
 }
 
 .name {
+    color: var(--red);
+    float: left;
+    display: inline-block;
     font-size: 3rem;
+    padding: 1rem 2rem;
 }
 
-/*Links in the side/nav bar*/
-.sections li {
-    padding: 0.5rem;
+nav a {
+    float: right;
+    display: inline-block;
+    color: var(--red);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 
-.sections li:hover {
+nav a:hover {
     font-weight: bolder;
+    background-color: var(--light-green)
 }
 
-/*Links underneath portfolio, initially hidden*/
-.languages {
-    display: none;
-    margin-left: 1rem;
+body {
+    background-color: ;
+   
 }
 
-/*Languages appears when mouse hovers over the word portfolio*/
-.sections:hover .languages{
-    display: block;
+@media screen and (max-width: 1068px){
+    
 }
 
-#social-media {
-    max-width: 100%;
-    flex-wrap: nowrap;
-    align-items: center;
-}
+@media screen and (max-width: 583px){
 
-#social-media img {
-    max-width: 3rem;
-    flex: 0 1 3rem;
-    height: auto;
 }
