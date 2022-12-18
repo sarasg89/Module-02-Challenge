@@ -6,11 +6,12 @@ html {
 
 :root {
     --green: #2e8b57;
-    --text: #8b392e;
+    --text: #841617;
     --background-hover: #76c161;
     --text-hover: #c16176;
-    --body: #3bb16f;
-    --shadow: #8b2e47;
+    --body: #3cb371;
+    --box-shadow: #63ba87;
+    --shadow: #9e1b32;
 }
 
 header {
@@ -53,6 +54,12 @@ body {
     background-color: var(--body);
 }
 
+#applications {
+    border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-bottom: 1rem;
+    /*margin-top: 3rem;*/
+}
+
 /*To center 1st app image*/
 .app1 img {
     display: block;
@@ -74,10 +81,12 @@ body {
 
 #aboutme {
     background-color: var(--hover);
-    margin: auto;
+    margin: 3rem auto;
     width: 50%;
     padding: 1rem;
     text-align: center;
+    border: 0.5rem double var(--green);
+    box-shadow: 1.5rem 1.5rem 0.5rem var(--box-shadow);
 }
 
 footer {
