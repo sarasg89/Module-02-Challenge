@@ -8,7 +8,7 @@ This site has been created also to showcase my ability to use core skills such a
 
 Before creating the code for the portfolio, I created a wireframe to come up with the structure I wanted my website to follow. 
 
-![Screenshot of wireframe](./assets/images/wireframe%20screenshot.png)
+![Screenshot of wireframe](./assets/images/topbar%20screenshot.png)
 
 ## Deployment
 
@@ -16,7 +16,7 @@ Before creating the code for the portfolio, I created a wireframe to come up wit
 
 Social Media icons downloaded from [Iconfinder](https://www.iconfinder.com)
 
-Wireframe made using [Lucidchart](https://lucid.app/lucidchart/5c088471-f859-493e-82ab-dc6f0361ddcb/edit?viewport_loc=-572%2C-166%2C3328%2C1612%2C0_0&invitationId=inv_0148a65d-36f5-4f34-8aa2-41a114df02e2)
+Wireframe made using [Lucidchart](https://lucid.app/lucidchart/dbf09575-ca51-4bed-ba0c-082350a58727/edit?viewport_loc=-310%2C-19%2C2491%2C1375%2C0_0&invitationId=inv_3e81d4df-39cd-4531-a59d-b14033281fb0)
 
 Reset CSS copied from [Eric A. Meyer's site](https://meyerweb.com/eric/tools/css/reset/)
 
