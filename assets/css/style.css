@@ -56,8 +56,8 @@ body {
 
 #applications {
     border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-top: 6rem;
     padding-bottom: 1rem;
-    /*margin-top: 3rem;*/
 }
 
 /*To center 1st app image*/
@@ -79,6 +79,7 @@ body {
     padding: 2rem;
 }
 
+/*About Me section*/
 #aboutme {
     background-color: var(--hover);
     margin: 3rem auto;
@@ -89,6 +90,30 @@ body {
     box-shadow: 1.5rem 1.5rem 0.5rem var(--box-shadow);
 }
 
+#aboutme h2 {
+    font-size: 2rem;
+    color: var(--text);
+}
+
+/*Container for the image and < p >*/
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilepic {
+    width: 30%;
+    padding: 2rem;
+}
+
+.imgcontainer p {
+    text-align: justify;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+/*Footer*/
 footer {
     background-color: var(--green);
     display: flex;
