@@ -51,9 +51,23 @@ body {
     background-color: var(--mint-green);
 }
 
-#applications {
+/*To center 1st app image*/
+.app1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/*Container where images 2-5 are*/
+.apps {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.apps img {
+    padding: 2rem;
 }
 
 #aboutme {
@@ -87,7 +101,7 @@ footer p,
     .name {
         display: block;
     }
-    
+
     .navbar {
         width: 12.5rem;
         background-color: var(--green);
