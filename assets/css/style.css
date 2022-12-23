@@ -4,6 +4,11 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
 /*Variables created for this site*/
 :root {
     --green: #2e8b57;
@@ -31,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
 }
 
 /*Styling for my name*/
@@ -68,11 +73,11 @@ header {
 /*The following selector define the style applied to the #applications id element*/
 #applications {
     border-bottom: 0.5rem dashed var(--box-shadow);
-    padding-top: 6rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/*To center 1st app image*/
+/*Styling for the 1st application*/
 .app1 img {
     display: block;
     margin-left: auto;
@@ -80,15 +85,37 @@ header {
     padding: 2rem;
 }
 
+.app1-text {
+    position: relative;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    background-color: var(--green);
+    color: var(--text);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
 /*Container where images 2-5 are*/
 .apps {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.apps img {
-    padding: 2rem;
+.apps2-5 {
+    position: relative;
+    border: var(--green);
+    border-style: solid;
+    border-width: 0.2rem;
+}
+
+.app2-5-text {
+    position: absolute;
+    bottom: 1rem;
+    left: -0.1rem;
+    background-color: var(--green);
+    color: var(--text);
+    padding: 0.75rem;
 }
 /*This is the end of #applications styling*/
 
