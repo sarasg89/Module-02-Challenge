@@ -78,21 +78,27 @@ header {
 }
 
 /*Styling for the 1st application*/
-.app1 img {
+.app1 {
+    position: relative;
+    border: var(--green);
+    border-style: solid;
+    border-width: 0.2rem;
+}
+
+/* .app1 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem;
-}
+} */
 
 .app1-text {
-    position: relative;
-    bottom: 1.25rem;
-    left: 1.25rem;
+    position: absolute;
+    bottom: 1rem;
+    left: -0.1rem;
     background-color: var(--green);
     color: var(--text);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 0.75rem;
 }
 
 /*Container where images 2-5 are*/
