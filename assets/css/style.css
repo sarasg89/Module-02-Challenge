@@ -4,56 +4,68 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*Variables created for this site*/
 :root {
     --green: #2e8b57;
     --text: #841617;
     --background-hover: #76c161;
     --text-hover: #c16176;
-    --body: #3cb371;
+    --body: #daeae1;
     --box-shadow: #63ba87;
     --shadow: #9e1b32;
 }
 
+
+/*This selector establishes the background color for the body of the site*/
+body {
+    background-color: var(--body);
+}
+
+
+/*The following selectors define the style of the header*/
 header {
-    overflow: hidden;
     background-color: var(--green);
-    position: fixed;
     width: 100%;
     height: auto;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
 }
 
+/*Styling for my name*/
 .name {
     color: var(--text);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px #8b2e47;
-    float: left;
-    display: inline-block;
     font-size: 3rem;
     padding: 1rem 2rem;
 }
 
-nav a {
-    float: right;
-    display: inline-block;
+/*Styling for the links in the navbar. Using the flex properties to align this container to the right of the page*/
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
     color: var(--text);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    line-height: 3rem;
 }
 
-nav a:hover {
+.navbar a:hover {
     font-weight: bolder;
     text-shadow: 0.05rem 0.05rem var(--shadow);
-    background-color: var(--background-hover);
+    /* background-color: var(--background-hover); */
     color: var(--text-hover);
 }
+/*This is the end of header styling*/
 
-body {
-    background-color: var(--body);
-}
 
+/*The following selector define the style applied to the #applications id element*/
 #applications {
     border-bottom: 0.5rem dashed var(--box-shadow);
     padding-top: 6rem;
@@ -78,8 +90,10 @@ body {
 .apps img {
     padding: 2rem;
 }
+/*This is the end of #applications styling*/
 
-/*About Me section*/
+
+/*The following selectors define the style of the About Me section*/
 #aboutme {
     background-color: var(--hover);
     margin: 3rem auto;
@@ -112,8 +126,10 @@ body {
     padding: 2rem;
     line-height: 1.5rem;
 }
+/*This is the end of About Me styling*/
 
-/*Footer*/
+
+/*The following selectors define the style of the footer*/
 footer {
     background-color: var(--green);
     display: flex;
@@ -130,25 +146,45 @@ footer p,
     padding-left: 1rem;
     padding-right: 1rem;
 }
+/*This is the end of footer styling*/
 
-@media screen and (max-width: 1068px) {}
 
-@media screen and (max-width: 583px) {
+@media screen and (max-width: 400px) {
     .name {
-        display: block;
+        font-size: 1.8rem;
     }
 
-    .navbar {
-        width: 12.5rem;
-        background-color: var(--green);
-        width: 50%;
-        margin: 0;
-        padding: 0;
+    nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
-    .navbar li {
-        display: block;
+    nav li {
         color: var(--text);
         padding: 0.5rem 1rem;
     }
+    
+    nav a {
+        padding: 0rem;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    #applications {
+        padding: 0 0 1rem 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .app1, .apps {
+        justify-content: center;
+    }
+
+    img {
+        width: 80%;
+        padding: 0;
+    }
 }
+
