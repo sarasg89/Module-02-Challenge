@@ -9,6 +9,13 @@ a {
     color: var(--text);
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    /* padding: 10px; */
+}
+
 /*Variables created for this site*/
 :root {
     --green: #2e8b57;
@@ -67,6 +74,7 @@ header {
     /* background-color: var(--background-hover); */
     color: var(--text-hover);
 }
+
 /*This is the end of header styling*/
 
 
@@ -80,26 +88,28 @@ header {
 /*Styling for the 1st application*/
 .app1 {
     position: relative;
+}
+
+.app1 img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
 }
 
-/* .app1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-} */
-
 .app1-text {
     position: absolute;
     bottom: 1rem;
-    left: -0.1rem;
+    left: 0.2rem;
     background-color: var(--green);
     color: var(--text);
     padding: 0.75rem;
 }
+
 
 /*Container where images 2-5 are*/
 .apps {
@@ -110,6 +120,10 @@ header {
 
 .apps2-5 {
     position: relative;
+    margin-bottom: 2rem;
+}
+
+.apps2-5 img {
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
@@ -118,11 +132,12 @@ header {
 .app2-5-text {
     position: absolute;
     bottom: 1rem;
-    left: -0.1rem;
+    left: 0.2rem;
     background-color: var(--green);
     color: var(--text);
     padding: 0.75rem;
 }
+
 /*This is the end of #applications styling*/
 
 
@@ -159,6 +174,7 @@ header {
     padding: 2rem;
     line-height: 1.5rem;
 }
+
 /*This is the end of About Me styling*/
 
 
@@ -179,6 +195,7 @@ footer p,
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 /*This is the end of footer styling*/
 
 
@@ -196,7 +213,7 @@ footer p,
         color: var(--text);
         padding: 0.5rem 1rem;
     }
-    
+
     nav a {
         padding: 0rem;
         text-decoration: none;
@@ -211,7 +228,8 @@ footer p,
         flex-wrap: wrap;
     }
 
-    .app1, .apps {
+    .app1,
+    .apps {
         justify-content: center;
     }
 
@@ -220,4 +238,3 @@ footer p,
         padding: 0;
     }
 }
-
