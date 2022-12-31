@@ -9,12 +9,6 @@ a {
     color: var(--text);
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    /* padding: 10px; */
-}
 
 /*Variables created for this site*/
 :root {
@@ -85,14 +79,21 @@ header {
     padding-bottom: 1rem;
 }
 
+.apps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 /*Styling for the 1st application*/
 .app1 {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .app1 img {
     display: block;
-    width: 50%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -103,7 +104,7 @@ header {
 
 .app1-text {
     position: absolute;
-    bottom: 1rem;
+    bottom: 3rem;
     left: 0.2rem;
     background-color: var(--green);
     color: var(--text);
@@ -112,12 +113,6 @@ header {
 
 
 /*Container where images 2-5 are*/
-.apps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .apps2-5 {
     position: relative;
     margin-bottom: 2rem;
