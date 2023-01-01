@@ -9,6 +9,7 @@ a {
     color: var(--text);
 }
 
+
 /*Variables created for this site*/
 :root {
     --green: #2e8b57;
@@ -67,6 +68,7 @@ header {
     /* background-color: var(--background-hover); */
     color: var(--text-hover);
 }
+
 /*This is the end of header styling*/
 
 
@@ -77,33 +79,46 @@ header {
     padding-bottom: 1rem;
 }
 
-/*Styling for the 1st application*/
-.app1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-}
-
-.app1-text {
-    position: relative;
-    bottom: 1.25rem;
-    left: 1.25rem;
-    background-color: var(--green);
-    color: var(--text);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-
-/*Container where images 2-5 are*/
 .apps {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+/*Styling for the 1st application*/
+.app1 {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.app1 img {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 2rem;
+    border: var(--green);
+    border-style: solid;
+    border-width: 0.2rem;
+    width: 44rem;
+}
+
+.app1-text {
+    position: absolute;
+    bottom: 3rem;
+    left: 0.2rem;
+    background-color: var(--green);
+    color: var(--text);
+    padding: 0.75rem;
+}
+
+
+/*Container where images 2-5 are*/
 .apps2-5 {
     position: relative;
+    margin-bottom: 2rem;
+}
+
+.apps2-5 img {
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
@@ -112,11 +127,12 @@ header {
 .app2-5-text {
     position: absolute;
     bottom: 1rem;
-    left: -0.1rem;
+    left: 0.2rem;
     background-color: var(--green);
     color: var(--text);
     padding: 0.75rem;
 }
+
 /*This is the end of #applications styling*/
 
 
@@ -153,6 +169,7 @@ header {
     padding: 2rem;
     line-height: 1.5rem;
 }
+
 /*This is the end of About Me styling*/
 
 
@@ -173,6 +190,7 @@ footer p,
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 /*This is the end of footer styling*/
 
 
@@ -190,7 +208,7 @@ footer p,
         color: var(--text);
         padding: 0.5rem 1rem;
     }
-    
+
     nav a {
         padding: 0rem;
         text-decoration: none;
@@ -205,7 +223,8 @@ footer p,
         flex-wrap: wrap;
     }
 
-    .app1, .apps {
+    .app1,
+    .apps {
         justify-content: center;
     }
 
@@ -214,4 +233,3 @@ footer p,
         padding: 0;
     }
 }
-
