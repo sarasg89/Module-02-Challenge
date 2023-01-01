@@ -65,7 +65,6 @@ header {
 .navbar a:hover {
     font-weight: bolder;
     text-shadow: 0.05rem 0.05rem var(--shadow);
-    /* background-color: var(--background-hover); */
     color: var(--text-hover);
 }
 
@@ -100,6 +99,7 @@ header {
     border-style: solid;
     border-width: 0.2rem;
     width: 44rem;
+    object-fit: cover;
 }
 
 .app1-text {
@@ -122,6 +122,9 @@ header {
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
+    height: 12rem;
+    width: 27rem;
+    object-fit: cover;
 }
 
 .app2-5-text {
