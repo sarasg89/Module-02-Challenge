@@ -141,30 +141,30 @@ header {
 
 /*The following selectors define the style of the About Me section*/
 #aboutme {
-    background-color: var(--hover);
-    margin: 3rem auto;
-    width: 50%;
-    padding: 1rem;
-    text-align: center;
-    border: 0.5rem double var(--green);
-    box-shadow: 1.5rem 1.5rem 0.5rem var(--box-shadow);
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
 }
 
 #aboutme h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--text);
+    margin-left: 2rem;
 }
 
-/*Container for the image and < p >*/
+/*Container for the image and <p>*/
 .imgcontainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+    width: 75%;
 }
 
 #profilepic {
-    width: 30%;
-    padding: 2rem;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
 }
 
 .imgcontainer p {
