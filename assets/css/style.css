@@ -17,6 +17,11 @@ h2 {
     width: 11rem;
 }
 
+h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
 }
@@ -92,6 +97,23 @@ header {
 }
 
 /*This is the end of header styling*/
+
+
+/*Background image under header*/
+.backgroundimg {
+    background-image: url("../images/stripes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.backgroundimg h1 {
+    display: inline-block;
+    margin: 5rem;
+    color: var(--text);
+    background-color: var(--body);
+    padding: 1rem;
+}
 
 
 /*The following selector define the style applied to the #applications id element*/
