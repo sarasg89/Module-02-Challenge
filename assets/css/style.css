@@ -9,6 +9,29 @@ a {
     color: var(--text);
 }
 
+h2 {
+    font-size: 3rem;
+    color: var(--text);
+    text-align: right;
+    padding: 2rem 0.7rem;
+    width: 11rem;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.block{
+    border-left: 0.2rem solid var(--green);
+    margin: 2rem 0;
+    display: flex;
+}
 
 /*Variables created for this site*/
 :root {
@@ -65,7 +88,6 @@ header {
 .navbar a:hover {
     font-weight: bolder;
     text-shadow: 0.05rem 0.05rem var(--shadow);
-    /* background-color: var(--background-hover); */
     color: var(--text-hover);
 }
 
@@ -80,15 +102,18 @@ header {
 }
 
 .apps {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    position: relative;
+    display: inline-block;
 }
 
 /*Styling for the 1st application*/
 .app1 {
     position: relative;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .app1 img {
@@ -99,7 +124,9 @@ header {
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
-    width: 44rem;
+    width: 60rem;
+    height: auto;
+    object-fit: cover;
 }
 
 .app1-text {
@@ -115,13 +142,18 @@ header {
 /*Container where images 2-5 are*/
 .apps2-5 {
     position: relative;
-    margin-bottom: 2rem;
+    margin: 1rem 1rem 1rem 2rem;
+    float: none;
+    display: inline-block;
 }
 
 .apps2-5 img {
     border: var(--green);
     border-style: solid;
     border-width: 0.2rem;
+    height: 12rem;
+    width: 27rem;
+    object-fit: cover;
 }
 
 .app2-5-text {
@@ -133,44 +165,61 @@ header {
     padding: 0.75rem;
 }
 
+#applications img:hover {
+    filter: grayscale(100%);
+}
+
 /*This is the end of #applications styling*/
 
 
 /*The following selectors define the style of the About Me section*/
 #aboutme {
-    background-color: var(--hover);
-    margin: 3rem auto;
-    width: 50%;
-    padding: 1rem;
-    text-align: center;
-    border: 0.5rem double var(--green);
-    box-shadow: 1.5rem 1.5rem 0.5rem var(--box-shadow);
-}
-
-#aboutme h2 {
-    font-size: 2rem;
-    color: var(--text);
-}
-
-/*Container for the image and < p >*/
-.imgcontainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
+/*Container for the image and <p>*/
 #profilepic {
-    width: 30%;
-    padding: 2rem;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 2rem;
 }
 
-.imgcontainer p {
+.container p {
     text-align: justify;
     padding: 2rem;
     line-height: 1.5rem;
 }
 
 /*This is the end of About Me styling*/
+
+
+/*The following selector define the style of the contact me section*/
+#contactme{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactme li {
+    display: inline-flex;
+    margin: 2rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+#contactme a:hover {
+    background-color: var(--text-hover);
+    text-shadow: 0.05rem 0.05rem var(--shadow);
+}
+
+
+/*This is the end of contact me styling*/
 
 
 /*The following selectors define the style of the footer*/
