@@ -21,6 +21,7 @@ Wireframe made using [Lucidchart](https://lucid.app/lucidchart/dbf09575-ca51-4be
 Reset CSS copied from [Eric A. Meyer's site](https://meyerweb.com/eric/tools/css/reset/)
 
 Photos used for the applications:
+- Top image: [Photo by Meghan Rodgers](https://unsplash.com/photos/9ZUbyjA2Akk)
 - Surf: [Photo by Alexey Sinelnikov](https://www.pexels.com/photo/body-of-water-and-golden-hour-2911941/)
 - LED wall: [Photo by Justin Lane](https://unsplash.com/photos/lwwM_dotpcs)
 - Calculator: [Photo by Eduardo Rosas](https://www.pexels.com/photo/white-and-black-laptop-computer-907489/)
