@@ -4,61 +4,281 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-:root {
-    
-}
-
-body {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 a {
     text-decoration: none;
-    color: black;
+    color: var(--text);
 }
 
+h2 {
+    font-size: 3rem;
+    color: var(--text);
+    text-align: right;
+    padding: 2rem 0.7rem;
+    width: 11rem;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.block{
+    border-left: 0.2rem solid var(--green);
+    margin: 2rem 0;
+    display: flex;
+}
+
+/*Variables created for this site*/
+:root {
+    --green: #2e8b57;
+    --text: #841617;
+    --background-hover: #76c161;
+    --text-hover: #c16176;
+    --body: #daeae1;
+    --box-shadow: #63ba87;
+    --shadow: #9e1b32;
+}
+
+
+/*This selector establishes the background color for the body of the site*/
+body {
+    background-color: var(--body);
+}
+
+
+/*The following selectors define the style of the header*/
 header {
+    background-color: var(--green);
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+/*Styling for my name*/
+.name {
+    color: var(--text);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px #8b2e47;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+/*Styling for the links in the navbar. Using the flex properties to align this container to the right of the page*/
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    color: var(--text);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    font-weight: bolder;
+    text-shadow: 0.05rem 0.05rem var(--shadow);
+    color: var(--text-hover);
+}
+
+/*This is the end of header styling*/
+
+
+/*The following selector define the style applied to the #applications id element*/
+#applications {
+    border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.apps {
+    position: relative;
+    display: inline-block;
+}
+
+/*Styling for the 1st application*/
+.app1 {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.app1 img {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 2rem;
+    border: var(--green);
+    border-style: solid;
+    border-width: 0.2rem;
+    width: 60rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.app1-text {
+    position: absolute;
+    bottom: 3rem;
+    left: 0.2rem;
+    background-color: var(--green);
+    color: var(--text);
+    padding: 0.75rem;
+}
+
+
+/*Container where images 2-5 are*/
+.apps2-5 {
+    position: relative;
+    margin: 1rem 1rem 1rem 2rem;
+    float: none;
+    display: inline-block;
+}
+
+.apps2-5 img {
+    border: var(--green);
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 12rem;
+    width: 27rem;
+    object-fit: cover;
+}
+
+.app2-5-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.2rem;
+    background-color: var(--green);
+    color: var(--text);
+    padding: 0.75rem;
+}
+
+#applications img:hover {
+    filter: grayscale(100%);
+}
+
+/*This is the end of #applications styling*/
+
+
+/*The following selectors define the style of the About Me section*/
+#aboutme {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*Container for the image and <p>*/
+#profilepic {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.container p {
+    text-align: justify;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+/*This is the end of About Me styling*/
+
+
+/*The following selector define the style of the contact me section*/
+#contactme{
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 30%; */
-    align-items: flex-end;
-    margin: 2rem 2rem 0 2rem;
-    background-color: blue;
 }
 
-.name {
-    font-size: 3rem;
+#contactme li {
+    display: inline-flex;
+    margin: 2rem 2.5rem;
+    font-size: 1.5rem;
 }
 
-/*Links in the side/nav bar*/
-.sections li {
-    padding: 0.5rem;
+#contactme a:hover {
+    background-color: var(--text-hover);
+    text-shadow: 0.05rem 0.05rem var(--shadow);
 }
 
-.sections li:hover {
-    font-weight: bolder;
-}
 
-/*Links underneath portfolio, initially hidden*/
-.languages {
-    display: none;
-    margin-left: 1rem;
-}
+/*This is the end of contact me styling*/
 
-/*Languages appears when mouse hovers over the word portfolio*/
-.sections:hover .languages{
-    display: block;
-}
 
-#social-media {
-    max-width: 100%;
-    flex-wrap: nowrap;
+/*The following selectors define the style of the footer*/
+footer {
+    background-color: var(--green);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
     align-items: center;
+    padding: 0.75rem 0rem;
 }
 
-#social-media img {
-    max-width: 3rem;
-    flex: 0 1 3rem;
-    height: auto;
+footer p,
+#social-media {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*This is the end of footer styling*/
+
+
+@media screen and (max-width: 400px) {
+    .name {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        color: var(--text);
+        padding: 0.5rem 1rem;
+    }
+
+    nav a {
+        padding: 0rem;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    #applications {
+        padding: 0 0 1rem 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .app1,
+    .apps {
+        justify-content: center;
+    }
+
+    img {
+        width: 80%;
+        padding: 0;
+    }
 }

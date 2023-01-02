@@ -7,55 +7,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Sara's portfolio</title>
+    <title>🖥️ Sara's portfolio</title>
 </head>
 
 <body>
     <header>
         <h1 class="name">Sara Seoane García</h1>
-        <nav>
-            <ul class="sections">
-                <li class="portfolio"><a href="#applications">Portfolio</a></li>
-                <li class="languages">
-                    <ul>
-                        <li><a href="#">HTML / CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Python</a></li>
-                    </ul>
-                </li>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#applications">Work</a></li>
                 <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#social-media">Contact Me</a></li>
+                <li><a href="https://drive.google.com/file/d/1YU1MQoTvYkEKrzqrLlF5Fb5w9IbHNdkL/view?usp=share_link"
+                        target="_blank">Resume</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
             </ul>
         </nav>
-        <div id="social-media">
-            <a href="https://www.linkedin.com/in/sara-seoane-garcia/" target="_blank"><img
-                    src='./assets/images/LinkedIn_icon.png' alt="LinkedIn icon" title="LinkedIn icon" /></a>
-            <a href="https://github.com/sarasg89" target="_blank"><img src='./assets/images/GitHub_icon.png'
-                    alt="GitHub icon" title="GitHub icon" /></a>
-            <a href="#" target="_blank"><img src='./assets/images/Email_icon.png' alt="Email icon"
-                    title="Email icon" /></a>
-            <a href="#" target="_blank"><img src='./assets/images/Phone_icon.png' alt="Phone icon"
-                    title="Phone icon" /></a>
-            <a href="#" target="_blank"><img src='./assets/images/Discord_icon.png' alt="Discord icon"
-                    title="Discord icon" /></a>
-        </div>
     </header>
-    <section id="applications">
-        <div class="app">
-            <img width="512" alt="Placeholder view vector"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png">
+    <section id="applications" class="container">
+        <div class="column">
+            <h2>Work</h2>
+        </div>
+        <div class="apps block">
+            <div class="app1">
+                <img alt="Placeholder view vector" src="./assets/images/surf.jpg">
+                <div class="app1-text">
+                    <h3>Surf Report</h3>
+                    <a href="#">MERN Stack</a>
+                </div>
+            </div>
+            <div class="apps2-5">
+                <img alt="Placeholder view vector" src="./assets/images/LED.jpg">
+                <div class="app2-5-text">
+                    <h3>LED Wall</h3>
+                    <a href="#">Node/IoT</a>
+                </div>
+            </div>
+            <div class="apps2-5">
+                <img alt="Placeholder view vector" src="./assets/images/calculator.jpg">
+                <div class="app2-5-text">
+                    <h3>Calculator</h3>
+                    <a href="#">React/JavaScript/CSS</a>
+                </div>
+            </div>
+            <div class="apps2-5">
+                <img alt="Placeholder view vector" src="./assets/images/puzzels.jpg">
+                <div class="app2-5-text">
+                    <h3>Pastel Puzzels</h3>
+                    <a href="#">MERN Stack</a>
+                </div>
+            </div>
+            <div class="apps2-5">
+                <img alt="Placeholder view vector" src="./assets/images/running.jpg">
+                <div class="app2-5-text">
+                    <h3>Run Buddy</h3>
+                    <a href="#">HTML/CSS</a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="aboutme">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+        <div class="container">
+            <div class="column">
+                <h2>About Me</h2>
+            </div>
+            <div class="column block">
+                <img id="profilepic" src="./assets/images/Profile_picture.jpeg" alt="Sara's profile picture" />
+                <p>My name is Sara. I'm originally from Spain but I currently live in Canada. This might seem unusual,
+                    but I
+                    have actually lived in 5 different countries since I was 15 years old.<br></br>For the last 7
+                    years I have been working in accounting, which I have really enjoyed and have enabled me to develop
+                    many
+                    skills. Programming has also been an interest of mine for many years, unfortunately I had never been
+                    able to explore it in depth until now. <br></br>I am very excited to complete this UofT Coding
+                    Bootcamp in a few
+                    months and apply my new skills in the real world.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactme">
+        <div class="column">
+            <h2>Get in touch</h2>
+        </div>
+        <div class="column block">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sara-seoane-garcia/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/sarasg89" target="_blank">GitHub</a></li>
+                <li><a href="mailto: saraseoanegarcia@gmail.com">Email</a></li>
+                <li><a href="http://wa.me/12269788291" target="_blank">WhatsApp</a></li>
+                <li><a href="https://discordapp.com/users/sarasg89#0902" target="_blank">Discord</a></li>
+            </ul>
+        </div>
     </section>
     <footer>
-        <p>© 2022 Sara Seoane Garcia</p>
+        <p>© 2022 Sara Seoane García</p>
+        <div id="social-media">
+            <a href="https://www.linkedin.com/in/sara-seoane-garcia/" target="_blank"><img
+                    src='./assets/images/LinkedIn_icon.png' alt="LinkedIn icon" title="LinkedIn icon"
+                    style="width:30px" /></a>
+            <a href="https://github.com/sarasg89" target="_blank"><img src='./assets/images/GitHub_icon.png'
+                    alt="GitHub icon" title="GitHub icon" style="width:30px" /></a>
+            <a href="mailto: saraseoanegarcia@gmail.com"><img src='./assets/images/Email_icon.png' alt="Email icon"
+                    title="Email icon" style="width:30px" /></a>
+            <a href="http://wa.me/12269788291" target="_blank"><img src='./assets/images/Whatsapp_icon.png'
+                    alt="WhatsApp icon" title="WhatsApp icon" style="width:30px" /></a>
+            <a href="https://discordapp.com/users/sarasg89#0902" target="_blank"><img
+                    src='./assets/images/Discord_icon.png' alt="Discord icon" title="Discord icon"
+                    style="width:30px" /></a>
+        </div>
     </footer>
 </body>
 
