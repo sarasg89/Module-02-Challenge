@@ -70,6 +70,13 @@ header {
 
 /*This is the end of header styling*/
 
+h2 {
+    font-size: 3rem;
+    color: var(--text);
+    text-align: left;
+    margin: 2rem;
+}
+
 
 /*The following selector define the style applied to the #applications id element*/
 #applications {
@@ -145,28 +152,22 @@ header {
 
 /*The following selectors define the style of the About Me section*/
 #aboutme {
-    display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    justify-content: space-between;
-}
-
-#aboutme h2 {
-    font-size: 3rem;
-    color: var(--text);
-    margin-left: 2rem;
-    padding-right: 2rem;
-    border-right-style: solid;
-    border-right-color: var(--green);
-    border-right-width: 0.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 0.5rem dashed var(--box-shadow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /*Container for the image and <p>*/
 .imgcontainer {
     display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
-    width: 75%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
 }
 
 #profilepic {
