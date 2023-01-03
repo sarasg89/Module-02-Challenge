@@ -11,6 +11,7 @@ Before creating the code for the portfolio, I created a wireframe to come up wit
 ![Screenshot of wireframe](./assets/images/topbar%20screenshot.png)
 
 ## Deployment
+https://sarasg89.github.io/Module-02-Challenge/
 
 ## Credits
 
