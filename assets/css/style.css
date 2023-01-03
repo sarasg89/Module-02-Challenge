@@ -261,43 +261,30 @@ footer p,
 
 /*This is the end of footer styling*/
 
-
-@media screen and (max-width: 400px) {
-    .name {
-        font-size: 1.8rem;
+@media screen and (max-width: 1200px){
+    .app1 img {
+        max-width: 75%;
+        height: auto;
+    }
+       
+    .apps2-5 img {
+        max-width: 75%;
+        height: auto;
     }
 
-    nav {
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    nav li {
-        color: var(--text);
-        padding: 0.5rem 1rem;
-    }
-
-    nav a {
-        padding: 0rem;
-        text-decoration: none;
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-
-    #applications {
-        padding: 0 0 1rem 0;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .app1,
-    .apps {
-        justify-content: center;
-    }
-
-    img {
-        width: 80%;
-        padding: 0;
+    #profilepic {
+        max-width: 10%;
     }
 }
+
+@media screen and (max-width: 900px){
+    .name {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+}
+
+
