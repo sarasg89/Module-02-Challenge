@@ -10,6 +10,10 @@ Before creating the code for the portfolio, I created a wireframe to come up wit
 
 ![Screenshot of wireframe](./assets/images/topbar%20screenshot.png)
 
+## Screenshot of the final application
+
+![](./assets/images/deployed-application.png)
+
 ## Deployment
 https://sarasg89.github.io/Module-02-Challenge/
 
